@@ -80,7 +80,6 @@ func _loadClientConfig() ClientConfig {
 	args[0] = client("key").String()
 	args[1] = client("server-host").String()
 	args[2] = GetIps()
-	fmt.Println("Ips=",args[2]);
 	args[3] = client("tunnel-count").String()
 
 	return _parseClientConfig(args)

@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 	"strings"
+	"fmt"
 )
 
 func GetIps() String{
