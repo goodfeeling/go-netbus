@@ -7,7 +7,7 @@ import (
 	"fmt"
 )
 
-func GetIps() String{
+func GetIps() string{
 	// 获取ipport文件夹下的所有文件
 	files, err := ioutil.ReadDir("ipport")
 	if err != nil {
