@@ -1,0 +1,11 @@
+.idea
+*.iml
+*.exe
+*.zip
+*.tar.gz
+
+vendor
+go.sum
+
+config.ini
+netbus_windows_amd64
