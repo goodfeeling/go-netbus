@@ -12,7 +12,7 @@ func GetIps() string{
 	files, err := ioutil.ReadDir("ipport")
 	if err != nil {
 		fmt.Println("读取文件夹失败:", err)
-		return
+		return ""
 	}
 
 	// 用于存储所有行的字符串切片
