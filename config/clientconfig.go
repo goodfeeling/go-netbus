@@ -5,6 +5,7 @@ import (
 	"log"
 	"strconv"
 	"strings"
+	"go-netbus/core"
 )
 
 const (
@@ -79,7 +80,8 @@ func _loadClientConfig() ClientConfig {
 
 	args[0] = client("key").String()
 	args[1] = client("server-host").String()
-	args[2] = client("local-host-mapping").String()
+	args[2] = core.GetIps()
+	fmt.Println("Ips=",args[2]);
 	args[3] = client("tunnel-count").String()
 
 	return _parseClientConfig(args)
